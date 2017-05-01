@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainController">
+   <children>
+      <Label layoutX="227.0" layoutY="37.0" text="Contact Manager">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <TableView fx:id="tableView" layoutX="42.0" layoutY="100.0" prefHeight="217.0" prefWidth="374.0">
+        <columns>
+          <TableColumn fx:id="nameColunm" prefWidth="141.0" text="Name" />
+          <TableColumn fx:id="emailColunm" prefWidth="223.0" text="Email" />
+        </columns>
+      </TableView>
+      <Button layoutX="441.0" layoutY="100.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="122.0" text="Add" />
+      <Button fx:id="editButton" layoutX="441.0" layoutY="138.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="122.0" text="Edit" />
+      <Button fx:id="removeButton" layoutX="441.0" layoutY="176.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="122.0" text="Delete" />
+      <Button layoutX="441.0" layoutY="254.0" mnemonicParsing="false" onAction="#importContacts" prefHeight="25.0" prefWidth="122.0" text="Import Contacts" />
+      <Button layoutX="441.0" layoutY="292.0" mnemonicParsing="false" onAction="#exportContacts" prefHeight="25.0" prefWidth="122.0" text="Export Contacts" />
+      <Label fx:id="hoverDetails" layoutX="42.0" layoutY="349.0" prefHeight="36.0" prefWidth="520.0" textFill="#0f5e01" wrapText="true" />
+   </children>
+</AnchorPane>

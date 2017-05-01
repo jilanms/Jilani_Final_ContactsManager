@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="435.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ContactInfoController">
+   <children>
+      <Label layoutX="114.0" layoutY="24.0" text="Contact Information">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="77.0" text="First Name" />
+      <TextField fx:id="firstName" layoutX="134.0" layoutY="73.0" prefHeight="25.0" prefWidth="208.0" />
+      <TextField fx:id="lastName" layoutX="134.0" layoutY="108.0" prefHeight="25.0" prefWidth="208.0" />
+      <TextField fx:id="email" layoutX="134.0" layoutY="143.0" prefHeight="25.0" prefWidth="208.0" />
+      <TextField fx:id="phone" layoutX="134.0" layoutY="178.0" prefHeight="25.0" prefWidth="208.0" />
+      <TextField fx:id="address" layoutX="134.0" layoutY="213.0" prefHeight="25.0" prefWidth="208.0" />
+      <TextField fx:id="companyName" layoutX="134.0" layoutY="248.0" prefHeight="25.0" prefWidth="208.0" />
+      <TextField fx:id="companyPhone" layoutX="134.0" layoutY="283.0" prefHeight="25.0" prefWidth="208.0" />
+      <TextArea fx:id="notes" layoutX="134.0" layoutY="318.0" prefHeight="50.0" prefWidth="208.0" />
+      <Label layoutX="68.0" layoutY="112.0" text="Last Name" />
+      <Label layoutX="90.0" layoutY="182.0" text="Phone" />
+      <Label layoutX="95.0" layoutY="147.0" text="Email" />
+      <Label layoutX="36.0" layoutY="287.0" text="Company Phone" />
+      <Label layoutX="92.0" layoutY="322.0" text="Notes" />
+      <Label layoutX="38.0" layoutY="252.0" text="Company Name" />
+      <Label layoutX="81.0" layoutY="217.0" text="Address" />
+      <Button layoutX="231.0" layoutY="385.0" mnemonicParsing="false" onAction="#save" text="Save" />
+      <Button layoutX="287.0" layoutY="385.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+   </children>
+</AnchorPane>

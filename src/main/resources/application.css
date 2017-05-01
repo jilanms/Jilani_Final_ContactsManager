@@ -1,0 +1,80 @@
+root { 
+    display: block;
+}
+.label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #014d06;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+.h-box:hover {
+    -fx-text-fill: -fx-text-inner-color;
+    -fx-background-color: #DDFFA4;
+}
+.button {
+    -fx-background-color:
+        linear-gradient(#9096bf, #9096bf),
+        radial-gradient(center 50% -40%, radius 200%, #b2b7f4 45%, #727df4 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+}
+
+.button:hover {
+    -fx-background-color:
+        linear-gradient(#f8f5f5, #f8f5f5),
+        radial-gradient(center 50% -40%, radius 200%, #b2b7f4 45%, #727df4 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #f8f5f5;
+}
+
+.table-view {
+    -fx-base: #c1c1c2;
+    -fx-control-inner-background: #c1c1c2;
+    -fx-background-color: #c1c1c2;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+.table-view:row-selection .table-row-cell:filled:hover {
+    -fx-background-color: #9999bb;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-text-fill: -fx-text-inner-color;
+}
+.table-view .column-header, .table-view .filler {
+    -fx-size: 20;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+.menu-item:pressed {
+	-fx-control-inner-background: #1d1d1d;
+}
+.table-view .column-header .label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: #0d0d0d;
+    -fx-alignment: center;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+#search{
+
+  -fx-border-radius: 10 10 10 10;
+  -fx-background-radius: 10 10 10 10;
+
+}
